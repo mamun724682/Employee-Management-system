@@ -40,5 +40,5 @@ Route::middleware('auth')->group(function (){
     //Department
     Route::get('{any}', function (){
         return view('employees.index');
-    })->where('{any}', '.*');
+    })->where('any', '.*');
 });
